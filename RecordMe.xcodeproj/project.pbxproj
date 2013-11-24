@@ -1,0 +1,469 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		446151A3184228A5000D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A2184228A5000D4745 /* Foundation.framework */; };
+		446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A4184228A5000D4745 /* CoreGraphics.framework */; };
+		446151A7184228A5000D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A6184228A5000D4745 /* UIKit.framework */; };
+		446151AD184228A5000D4745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 446151AB184228A5000D4745 /* InfoPlist.strings */; };
+		446151AF184228A5000D4745 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151AE184228A5000D4745 /* main.m */; };
+		446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151B2184228A5000D4745 /* YQAppDelegate.m */; };
+		446151B5184228A5000D4745 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 446151B4184228A5000D4745 /* Images.xcassets */; };
+		446151BC184228A5000D4745 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151BB184228A5000D4745 /* XCTest.framework */; };
+		446151BD184228A5000D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A2184228A5000D4745 /* Foundation.framework */; };
+		446151BE184228A5000D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A6184228A5000D4745 /* UIKit.framework */; };
+		446151C6184228A5000D4745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 446151C4184228A5000D4745 /* InfoPlist.strings */; };
+		446151C8184228A5000D4745 /* RecordMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151C7184228A5000D4745 /* RecordMeTests.m */; };
+		446151D618423CBA000D4745 /* YQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151D418423CBA000D4745 /* YQMainViewController.m */; };
+		446151D718423CBA000D4745 /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446151D518423CBA000D4745 /* YQMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		446151BF184228A5000D4745 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44615197184228A5000D4745 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4461519E184228A5000D4745;
+			remoteInfo = RecordMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4461519F184228A5000D4745 /* RecordMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		446151A2184228A5000D4745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		446151A4184228A5000D4745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		446151A6184228A5000D4745 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		446151AA184228A5000D4745 /* RecordMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordMe-Info.plist"; sourceTree = "<group>"; };
+		446151AC184228A5000D4745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		446151AE184228A5000D4745 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		446151B0184228A5000D4745 /* RecordMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RecordMe-Prefix.pch"; sourceTree = "<group>"; };
+		446151B1184228A5000D4745 /* YQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQAppDelegate.h; sourceTree = "<group>"; };
+		446151B2184228A5000D4745 /* YQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQAppDelegate.m; sourceTree = "<group>"; };
+		446151B4184228A5000D4745 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		446151BA184228A5000D4745 /* RecordMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		446151BB184228A5000D4745 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		446151C3184228A5000D4745 /* RecordMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordMeTests-Info.plist"; sourceTree = "<group>"; };
+		446151C5184228A5000D4745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		446151C7184228A5000D4745 /* RecordMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeTests.m; sourceTree = "<group>"; };
+		446151D318423CBA000D4745 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMainViewController.h; sourceTree = "<group>"; };
+		446151D418423CBA000D4745 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMainViewController.m; sourceTree = "<group>"; };
+		446151D518423CBA000D4745 /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4461519C184228A5000D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */,
+				446151A7184228A5000D4745 /* UIKit.framework in Frameworks */,
+				446151A3184228A5000D4745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446151B7184228A5000D4745 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151BC184228A5000D4745 /* XCTest.framework in Frameworks */,
+				446151BE184228A5000D4745 /* UIKit.framework in Frameworks */,
+				446151BD184228A5000D4745 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44615196184228A5000D4745 = {
+			isa = PBXGroup;
+			children = (
+				446151A8184228A5000D4745 /* RecordMe */,
+				446151C1184228A5000D4745 /* RecordMeTests */,
+				446151A1184228A5000D4745 /* Frameworks */,
+				446151A0184228A5000D4745 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		446151A0184228A5000D4745 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4461519F184228A5000D4745 /* RecordMe.app */,
+				446151BA184228A5000D4745 /* RecordMeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		446151A1184228A5000D4745 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				446151A2184228A5000D4745 /* Foundation.framework */,
+				446151A4184228A5000D4745 /* CoreGraphics.framework */,
+				446151A6184228A5000D4745 /* UIKit.framework */,
+				446151BB184228A5000D4745 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		446151A8184228A5000D4745 /* RecordMe */ = {
+			isa = PBXGroup;
+			children = (
+				446151B1184228A5000D4745 /* YQAppDelegate.h */,
+				446151B2184228A5000D4745 /* YQAppDelegate.m */,
+				446151B4184228A5000D4745 /* Images.xcassets */,
+				446151A9184228A5000D4745 /* Supporting Files */,
+				446151D318423CBA000D4745 /* YQMainViewController.h */,
+				446151D418423CBA000D4745 /* YQMainViewController.m */,
+				446151D518423CBA000D4745 /* YQMainViewController.xib */,
+			);
+			path = RecordMe;
+			sourceTree = "<group>";
+		};
+		446151A9184228A5000D4745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				446151AA184228A5000D4745 /* RecordMe-Info.plist */,
+				446151AB184228A5000D4745 /* InfoPlist.strings */,
+				446151AE184228A5000D4745 /* main.m */,
+				446151B0184228A5000D4745 /* RecordMe-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		446151C1184228A5000D4745 /* RecordMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				446151C7184228A5000D4745 /* RecordMeTests.m */,
+				446151C2184228A5000D4745 /* Supporting Files */,
+			);
+			path = RecordMeTests;
+			sourceTree = "<group>";
+		};
+		446151C2184228A5000D4745 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				446151C3184228A5000D4745 /* RecordMeTests-Info.plist */,
+				446151C4184228A5000D4745 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4461519E184228A5000D4745 /* RecordMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446151CB184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMe" */;
+			buildPhases = (
+				4461519B184228A5000D4745 /* Sources */,
+				4461519C184228A5000D4745 /* Frameworks */,
+				4461519D184228A5000D4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecordMe;
+			productName = RecordMe;
+			productReference = 4461519F184228A5000D4745 /* RecordMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		446151B9184228A5000D4745 /* RecordMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 446151CE184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMeTests" */;
+			buildPhases = (
+				446151B6184228A5000D4745 /* Sources */,
+				446151B7184228A5000D4745 /* Frameworks */,
+				446151B8184228A5000D4745 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				446151C0184228A5000D4745 /* PBXTargetDependency */,
+			);
+			name = RecordMeTests;
+			productName = RecordMeTests;
+			productReference = 446151BA184228A5000D4745 /* RecordMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44615197184228A5000D4745 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YQ;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = YQ;
+				TargetAttributes = {
+					446151B9184228A5000D4745 = {
+						TestTargetID = 4461519E184228A5000D4745;
+					};
+				};
+			};
+			buildConfigurationList = 4461519A184228A5000D4745 /* Build configuration list for PBXProject "RecordMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 44615196184228A5000D4745;
+			productRefGroup = 446151A0184228A5000D4745 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4461519E184228A5000D4745 /* RecordMe */,
+				446151B9184228A5000D4745 /* RecordMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4461519D184228A5000D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151AD184228A5000D4745 /* InfoPlist.strings in Resources */,
+				446151B5184228A5000D4745 /* Images.xcassets in Resources */,
+				446151D718423CBA000D4745 /* YQMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446151B8184228A5000D4745 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151C6184228A5000D4745 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4461519B184228A5000D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */,
+				446151AF184228A5000D4745 /* main.m in Sources */,
+				446151D618423CBA000D4745 /* YQMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		446151B6184228A5000D4745 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446151C8184228A5000D4745 /* RecordMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		446151C0184228A5000D4745 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4461519E184228A5000D4745 /* RecordMe */;
+			targetProxy = 446151BF184228A5000D4745 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		446151AB184228A5000D4745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446151AC184228A5000D4745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		446151C4184228A5000D4745 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				446151C5184228A5000D4745 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		446151C9184228A5000D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		446151CA184228A5000D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		446151CC184228A5000D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
+				INFOPLIST_FILE = "RecordMe/RecordMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		446151CD184228A5000D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
+				INFOPLIST_FILE = "RecordMe/RecordMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		446151CF184228A5000D4745 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecordMe.app/RecordMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RecordMeTests/RecordMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		446151D0184228A5000D4745 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecordMe.app/RecordMe";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
+				INFOPLIST_FILE = "RecordMeTests/RecordMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4461519A184228A5000D4745 /* Build configuration list for PBXProject "RecordMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446151C9184228A5000D4745 /* Debug */,
+				446151CA184228A5000D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		446151CB184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446151CC184228A5000D4745 /* Debug */,
+				446151CD184228A5000D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		446151CE184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446151CF184228A5000D4745 /* Debug */,
+				446151D0184228A5000D4745 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44615197184228A5000D4745 /* Project object */;
+}
