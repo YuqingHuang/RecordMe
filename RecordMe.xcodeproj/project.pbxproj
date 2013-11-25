@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */; };
+		36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A5B0388F1C64CF98982 /* avatar.png */; };
 		446151A3184228A5000D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A2184228A5000D4745 /* Foundation.framework */; };
 		446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A4184228A5000D4745 /* CoreGraphics.framework */; };
 		446151A7184228A5000D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A6184228A5000D4745 /* UIKit.framework */; };
@@ -20,7 +22,19 @@
 		446151C6184228A5000D4745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 446151C4184228A5000D4745 /* InfoPlist.strings */; };
 		446151C8184228A5000D4745 /* RecordMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151C7184228A5000D4745 /* RecordMeTests.m */; };
 		446151D618423CBA000D4745 /* YQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151D418423CBA000D4745 /* YQMainViewController.m */; };
-		446151D718423CBA000D4745 /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 446151D518423CBA000D4745 /* YQMainViewController.xib */; };
+		493DE51718432CB1004C5B8A /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493DE51618432CB1004C5B8A /* YQMainViewController.xib */; };
+		494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494936F31842F5DB001CC484 /* YQCircularImageView.m */; };
+		494936F6184302C0001CC484 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494936F5184302C0001CC484 /* QuartzCore.framework */; };
+		49A8E81C18434BDA0018341A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A8E81B18434BDA0018341A /* Accelerate.framework */; };
+		49A8E82718434D340018341A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E81E18434D330018341A /* arrow.png */; };
+		49A8E82818434D340018341A /* attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E81F18434D330018341A /* attachment.png */; };
+		49A8E82918434D340018341A /* block.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82018434D330018341A /* block.png */; };
+		49A8E82A18434D340018341A /* bluetooth.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82118434D330018341A /* bluetooth.png */; };
+		49A8E82B18434D340018341A /* cube.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82218434D330018341A /* cube.png */; };
+		49A8E82C18434D340018341A /* download.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82318434D330018341A /* download.png */; };
+		49A8E82D18434D340018341A /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82418434D330018341A /* enter.png */; };
+		49A8E82E18434D340018341A /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82518434D340018341A /* file.png */; };
+		49A8E82F18434D340018341A /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82618434D340018341A /* github.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36867A5B0388F1C64CF98982 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		4461519F184228A5000D4745 /* RecordMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446151A2184228A5000D4745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		446151A4184228A5000D4745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +67,22 @@
 		446151C7184228A5000D4745 /* RecordMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeTests.m; sourceTree = "<group>"; };
 		446151D318423CBA000D4745 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMainViewController.h; sourceTree = "<group>"; };
 		446151D418423CBA000D4745 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMainViewController.m; sourceTree = "<group>"; };
-		446151D518423CBA000D4745 /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
+		493DE51618432CB1004C5B8A /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
+		494936F21842F5DB001CC484 /* YQCircularImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCircularImageView.h; sourceTree = "<group>"; };
+		494936F31842F5DB001CC484 /* YQCircularImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCircularImageView.m; sourceTree = "<group>"; };
+		494936F5184302C0001CC484 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49A8E81B18434BDA0018341A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		49A8E81E18434D330018341A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		49A8E81F18434D330018341A /* attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attachment.png; sourceTree = "<group>"; };
+		49A8E82018434D330018341A /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		49A8E82118434D330018341A /* bluetooth.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluetooth.png; sourceTree = "<group>"; };
+		49A8E82218434D330018341A /* cube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cube.png; sourceTree = "<group>"; };
+		49A8E82318434D330018341A /* download.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = download.png; sourceTree = "<group>"; };
+		49A8E82418434D330018341A /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
+		49A8E82518434D340018341A /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
+		49A8E82618434D340018341A /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordMe.xcconfig"; path = "Pods/Pods-RecordMe.xcconfig"; sourceTree = "<group>"; };
+		D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +90,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A8E81C18434BDA0018341A /* Accelerate.framework in Frameworks */,
+				494936F6184302C0001CC484 /* QuartzCore.framework in Frameworks */,
 				446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */,
 				446151A7184228A5000D4745 /* UIKit.framework in Frameworks */,
 				446151A3184228A5000D4745 /* Foundation.framework in Frameworks */,
+				3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +112,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		368670B70DF4B170EE0D9E4B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				49A8E81D18434D330018341A /* icons */,
+				36867A5B0388F1C64CF98982 /* avatar.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		44615196184228A5000D4745 = {
 			isa = PBXGroup;
 			children = (
+				494936F5184302C0001CC484 /* QuartzCore.framework */,
 				446151A8184228A5000D4745 /* RecordMe */,
 				446151C1184228A5000D4745 /* RecordMeTests */,
 				446151A1184228A5000D4745 /* Frameworks */,
 				446151A0184228A5000D4745 /* Products */,
+				368670B70DF4B170EE0D9E4B /* Resource */,
+				78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +146,12 @@
 		446151A1184228A5000D4745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				49A8E81B18434BDA0018341A /* Accelerate.framework */,
 				446151A2184228A5000D4745 /* Foundation.framework */,
 				446151A4184228A5000D4745 /* CoreGraphics.framework */,
 				446151A6184228A5000D4745 /* UIKit.framework */,
 				446151BB184228A5000D4745 /* XCTest.framework */,
+				D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,13 +159,14 @@
 		446151A8184228A5000D4745 /* RecordMe */ = {
 			isa = PBXGroup;
 			children = (
+				493DE51618432CB1004C5B8A /* YQMainViewController.xib */,
+				494936F11842F572001CC484 /* View */,
 				446151B1184228A5000D4745 /* YQAppDelegate.h */,
 				446151B2184228A5000D4745 /* YQAppDelegate.m */,
 				446151B4184228A5000D4745 /* Images.xcassets */,
 				446151A9184228A5000D4745 /* Supporting Files */,
 				446151D318423CBA000D4745 /* YQMainViewController.h */,
 				446151D418423CBA000D4745 /* YQMainViewController.m */,
-				446151D518423CBA000D4745 /* YQMainViewController.xib */,
 			);
 			path = RecordMe;
 			sourceTree = "<group>";
@@ -152,6 +200,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		494936F11842F572001CC484 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				494936F21842F5DB001CC484 /* YQCircularImageView.h */,
+				494936F31842F5DB001CC484 /* YQCircularImageView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		49A8E81D18434D330018341A /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				49A8E81E18434D330018341A /* arrow.png */,
+				49A8E81F18434D330018341A /* attachment.png */,
+				49A8E82018434D330018341A /* block.png */,
+				49A8E82118434D330018341A /* bluetooth.png */,
+				49A8E82218434D330018341A /* cube.png */,
+				49A8E82318434D330018341A /* download.png */,
+				49A8E82418434D330018341A /* enter.png */,
+				49A8E82518434D340018341A /* file.png */,
+				49A8E82618434D340018341A /* github.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +232,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 446151CB184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMe" */;
 			buildPhases = (
+				BA74D60DAED94F1FB0B53B99 /* Check Pods Manifest.lock */,
 				4461519B184228A5000D4745 /* Sources */,
 				4461519C184228A5000D4745 /* Frameworks */,
 				4461519D184228A5000D4745 /* Resources */,
+				D700C1F33B26453799BDF911 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -201,7 +276,7 @@
 				ORGANIZATIONNAME = YQ;
 				TargetAttributes = {
 					446151B9184228A5000D4745 = {
-						TestTargetID = 4461519E184228A5000D4745;
+						TestTargetID = 4461519E184228A5000D4745 /* RecordMe */;
 					};
 				};
 			};
@@ -228,9 +303,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A8E82818434D340018341A /* attachment.png in Resources */,
+				49A8E82C18434D340018341A /* download.png in Resources */,
+				49A8E82918434D340018341A /* block.png in Resources */,
+				49A8E82B18434D340018341A /* cube.png in Resources */,
+				49A8E82F18434D340018341A /* github.png in Resources */,
 				446151AD184228A5000D4745 /* InfoPlist.strings in Resources */,
+				49A8E82D18434D340018341A /* enter.png in Resources */,
 				446151B5184228A5000D4745 /* Images.xcassets in Resources */,
-				446151D718423CBA000D4745 /* YQMainViewController.xib in Resources */,
+				36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */,
+				49A8E82718434D340018341A /* arrow.png in Resources */,
+				49A8E82A18434D340018341A /* bluetooth.png in Resources */,
+				493DE51718432CB1004C5B8A /* YQMainViewController.xib in Resources */,
+				49A8E82E18434D340018341A /* file.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +329,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BA74D60DAED94F1FB0B53B99 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D700C1F33B26453799BDF911 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-RecordMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4461519B184228A5000D4745 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -252,6 +370,7 @@
 				446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */,
 				446151AF184228A5000D4745 /* main.m in Sources */,
 				446151D618423CBA000D4745 /* YQMainViewController.m in Sources */,
+				494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,6 +488,7 @@
 		};
 		446151CC184228A5000D4745 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -382,6 +502,7 @@
 		};
 		446151CD184228A5000D4745 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -454,6 +575,7 @@
 				446151CD184228A5000D4745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		446151CE184228A5000D4745 /* Build configuration list for PBXNativeTarget "RecordMeTests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +584,7 @@
 				446151D0184228A5000D4745 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
