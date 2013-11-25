@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNGridMenu.h"
 
-@interface YQMainViewController : UIViewController
+@interface YQMainViewController : UIViewController<RNGridMenuDelegate>
 
 @end

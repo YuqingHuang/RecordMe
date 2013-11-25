@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */; };
 		36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A5B0388F1C64CF98982 /* avatar.png */; };
+		4415807718438B9D00D8ECE3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807318438B9D00D8ECE3 /* add.png */; };
+		4415807818438B9D00D8ECE3 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807418438B9D00D8ECE3 /* calendar.png */; };
+		4415807918438B9D00D8ECE3 /* heart.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807518438B9D00D8ECE3 /* heart.png */; };
+		4415807A18438B9D00D8ECE3 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807618438B9D00D8ECE3 /* settings.png */; };
 		446151A3184228A5000D4745 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A2184228A5000D4745 /* Foundation.framework */; };
 		446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A4184228A5000D4745 /* CoreGraphics.framework */; };
 		446151A7184228A5000D4745 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 446151A6184228A5000D4745 /* UIKit.framework */; };
@@ -49,6 +53,10 @@
 
 /* Begin PBXFileReference section */
 		36867A5B0388F1C64CF98982 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		4415807318438B9D00D8ECE3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		4415807418438B9D00D8ECE3 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		4415807518438B9D00D8ECE3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
+		4415807618438B9D00D8ECE3 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		4461519F184228A5000D4745 /* RecordMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		446151A2184228A5000D4745 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		446151A4184228A5000D4745 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +220,10 @@
 		49A8E81D18434D330018341A /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				4415807318438B9D00D8ECE3 /* add.png */,
+				4415807418438B9D00D8ECE3 /* calendar.png */,
+				4415807518438B9D00D8ECE3 /* heart.png */,
+				4415807618438B9D00D8ECE3 /* settings.png */,
 				49A8E81E18434D330018341A /* arrow.png */,
 				49A8E81F18434D330018341A /* attachment.png */,
 				49A8E82018434D330018341A /* block.png */,
@@ -276,7 +288,7 @@
 				ORGANIZATIONNAME = YQ;
 				TargetAttributes = {
 					446151B9184228A5000D4745 = {
-						TestTargetID = 4461519E184228A5000D4745 /* RecordMe */;
+						TestTargetID = 4461519E184228A5000D4745;
 					};
 				};
 			};
@@ -303,13 +315,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4415807918438B9D00D8ECE3 /* heart.png in Resources */,
 				49A8E82818434D340018341A /* attachment.png in Resources */,
 				49A8E82C18434D340018341A /* download.png in Resources */,
+				4415807A18438B9D00D8ECE3 /* settings.png in Resources */,
 				49A8E82918434D340018341A /* block.png in Resources */,
 				49A8E82B18434D340018341A /* cube.png in Resources */,
 				49A8E82F18434D340018341A /* github.png in Resources */,
 				446151AD184228A5000D4745 /* InfoPlist.strings in Resources */,
 				49A8E82D18434D340018341A /* enter.png in Resources */,
+				4415807818438B9D00D8ECE3 /* calendar.png in Resources */,
+				4415807718438B9D00D8ECE3 /* add.png in Resources */,
 				446151B5184228A5000D4745 /* Images.xcassets in Resources */,
 				36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */,
 				49A8E82718434D340018341A /* arrow.png in Resources */,
