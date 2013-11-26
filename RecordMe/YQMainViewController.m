@@ -8,6 +8,7 @@
 
 #import "YQMainViewController.h"
 #import "YQCircularImageView.h"
+#import "YQListViewController.h"
 #import <RNGridMenu.h>
 
 @interface YQMainViewController ()
@@ -48,10 +49,10 @@
 
 - (void)showGrid {
     NSInteger numberOfOptions = 4;
-    NSArray *items = @[[[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"calendar"] title:@" " action:^{[self displayList];}],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"add"] title:@" " action:^{[self addEvent];}],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"heart"] title:@" " action:^{}],
-                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"settings"] title:@" " action:^{}]
+    NSArray *items = @[[[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"arrow"] title:@"List" action:^{[self displayList];}],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"enter"] title:@"Add" action:^{[self addEvent];}],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"download"] title:@"Emm" action:^{}],
+                       [[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"cube"] title:@"Settings" action:^{}]
                        ];
     
     RNGridMenu *av = [[RNGridMenu alloc] initWithItems:[items subarrayWithRange:NSMakeRange(0, numberOfOptions)]];
@@ -61,7 +62,8 @@
 }
 
 - (void)displayList {
-    
+    YQListViewController *listVC = [[YQListViewController alloc] initWithNibName:@"YQListViewController" bundle:nil];
+    [self.navigationController pushViewController:listVC animated:YES];
 }
 
 - (void)addEvent {

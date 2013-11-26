@@ -29,6 +29,8 @@
 		493DE51718432CB1004C5B8A /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493DE51618432CB1004C5B8A /* YQMainViewController.xib */; };
 		494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494936F31842F5DB001CC484 /* YQCircularImageView.m */; };
 		494936F6184302C0001CC484 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494936F5184302C0001CC484 /* QuartzCore.framework */; };
+		49A0EAEE18444A7E004B8D31 /* YQListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49A0EAEC18444A7E004B8D31 /* YQListViewController.m */; };
+		49A0EAEF18444A7E004B8D31 /* YQListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49A0EAED18444A7E004B8D31 /* YQListViewController.xib */; };
 		49A8E81C18434BDA0018341A /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49A8E81B18434BDA0018341A /* Accelerate.framework */; };
 		49A8E82718434D340018341A /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E81E18434D330018341A /* arrow.png */; };
 		49A8E82818434D340018341A /* attachment.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E81F18434D330018341A /* attachment.png */; };
@@ -73,12 +75,15 @@
 		446151C3184228A5000D4745 /* RecordMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RecordMeTests-Info.plist"; sourceTree = "<group>"; };
 		446151C5184228A5000D4745 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		446151C7184228A5000D4745 /* RecordMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeTests.m; sourceTree = "<group>"; };
-		446151D318423CBA000D4745 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMainViewController.h; sourceTree = "<group>"; };
-		446151D418423CBA000D4745 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMainViewController.m; sourceTree = "<group>"; };
-		493DE51618432CB1004C5B8A /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
+		446151D318423CBA000D4745 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQMainViewController.h; path = ../YQMainViewController.h; sourceTree = "<group>"; };
+		446151D418423CBA000D4745 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQMainViewController.m; path = ../YQMainViewController.m; sourceTree = "<group>"; };
+		493DE51618432CB1004C5B8A /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YQMainViewController.xib; path = ../YQMainViewController.xib; sourceTree = "<group>"; };
 		494936F21842F5DB001CC484 /* YQCircularImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCircularImageView.h; sourceTree = "<group>"; };
 		494936F31842F5DB001CC484 /* YQCircularImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCircularImageView.m; sourceTree = "<group>"; };
 		494936F5184302C0001CC484 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49A0EAEB18444A7E004B8D31 /* YQListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQListViewController.h; sourceTree = "<group>"; };
+		49A0EAEC18444A7E004B8D31 /* YQListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQListViewController.m; sourceTree = "<group>"; };
+		49A0EAED18444A7E004B8D31 /* YQListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQListViewController.xib; sourceTree = "<group>"; };
 		49A8E81B18434BDA0018341A /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		49A8E81E18434D330018341A /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		49A8E81F18434D330018341A /* attachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = attachment.png; sourceTree = "<group>"; };
@@ -167,14 +172,12 @@
 		446151A8184228A5000D4745 /* RecordMe */ = {
 			isa = PBXGroup;
 			children = (
-				493DE51618432CB1004C5B8A /* YQMainViewController.xib */,
+				49A0EAEA18444A2E004B8D31 /* ViewController */,
 				494936F11842F572001CC484 /* View */,
 				446151B1184228A5000D4745 /* YQAppDelegate.h */,
 				446151B2184228A5000D4745 /* YQAppDelegate.m */,
 				446151B4184228A5000D4745 /* Images.xcassets */,
 				446151A9184228A5000D4745 /* Supporting Files */,
-				446151D318423CBA000D4745 /* YQMainViewController.h */,
-				446151D418423CBA000D4745 /* YQMainViewController.m */,
 			);
 			path = RecordMe;
 			sourceTree = "<group>";
@@ -215,6 +218,19 @@
 				494936F31842F5DB001CC484 /* YQCircularImageView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		49A0EAEA18444A2E004B8D31 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				493DE51618432CB1004C5B8A /* YQMainViewController.xib */,
+				446151D318423CBA000D4745 /* YQMainViewController.h */,
+				446151D418423CBA000D4745 /* YQMainViewController.m */,
+				49A0EAEB18444A7E004B8D31 /* YQListViewController.h */,
+				49A0EAEC18444A7E004B8D31 /* YQListViewController.m */,
+				49A0EAED18444A7E004B8D31 /* YQListViewController.xib */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		49A8E81D18434D330018341A /* icons */ = {
@@ -325,6 +341,7 @@
 				446151AD184228A5000D4745 /* InfoPlist.strings in Resources */,
 				49A8E82D18434D340018341A /* enter.png in Resources */,
 				4415807818438B9D00D8ECE3 /* calendar.png in Resources */,
+				49A0EAEF18444A7E004B8D31 /* YQListViewController.xib in Resources */,
 				4415807718438B9D00D8ECE3 /* add.png in Resources */,
 				446151B5184228A5000D4745 /* Images.xcassets in Resources */,
 				36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */,
@@ -386,6 +403,7 @@
 				446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */,
 				446151AF184228A5000D4745 /* main.m in Sources */,
 				446151D618423CBA000D4745 /* YQMainViewController.m in Sources */,
+				49A0EAEE18444A7E004B8D31 /* YQListViewController.m in Sources */,
 				494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
