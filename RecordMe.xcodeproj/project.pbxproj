@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */; };
+		36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D64CB8BC43FC1A4CF84 /* YQEvent.m */; };
 		36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A5B0388F1C64CF98982 /* avatar.png */; };
 		4415807718438B9D00D8ECE3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807318438B9D00D8ECE3 /* add.png */; };
 		4415807818438B9D00D8ECE3 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807418438B9D00D8ECE3 /* calendar.png */; };
@@ -26,6 +27,7 @@
 		446151C6184228A5000D4745 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 446151C4184228A5000D4745 /* InfoPlist.strings */; };
 		446151C8184228A5000D4745 /* RecordMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151C7184228A5000D4745 /* RecordMeTests.m */; };
 		446151D618423CBA000D4745 /* YQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 446151D418423CBA000D4745 /* YQMainViewController.m */; };
+		4937D87F1847580400A802E7 /* Reveal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4937D87E1847580400A802E7 /* Reveal.framework */; };
 		493DE51718432CB1004C5B8A /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 493DE51618432CB1004C5B8A /* YQMainViewController.xib */; };
 		494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 494936F31842F5DB001CC484 /* YQCircularImageView.m */; };
 		494936F6184302C0001CC484 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494936F5184302C0001CC484 /* QuartzCore.framework */; };
@@ -55,6 +57,8 @@
 
 /* Begin PBXFileReference section */
 		36867A5B0388F1C64CF98982 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		36867BC873380284B22FF632 /* YQEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEvent.h; sourceTree = "<group>"; };
+		36867D64CB8BC43FC1A4CF84 /* YQEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEvent.m; sourceTree = "<group>"; };
 		4415807318438B9D00D8ECE3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		4415807418438B9D00D8ECE3 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		4415807518438B9D00D8ECE3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		446151C7184228A5000D4745 /* RecordMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordMeTests.m; sourceTree = "<group>"; };
 		446151D318423CBA000D4745 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQMainViewController.h; path = ../YQMainViewController.h; sourceTree = "<group>"; };
 		446151D418423CBA000D4745 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQMainViewController.m; path = ../YQMainViewController.m; sourceTree = "<group>"; };
+		4937D87E1847580400A802E7 /* Reveal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Reveal.framework; path = Framework/Reveal.framework; sourceTree = "<group>"; };
 		493DE51618432CB1004C5B8A /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = YQMainViewController.xib; path = ../YQMainViewController.xib; sourceTree = "<group>"; };
 		494936F21842F5DB001CC484 /* YQCircularImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCircularImageView.h; sourceTree = "<group>"; };
 		494936F31842F5DB001CC484 /* YQCircularImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCircularImageView.m; sourceTree = "<group>"; };
@@ -103,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4937D87F1847580400A802E7 /* Reveal.framework in Frameworks */,
 				49A8E81C18434BDA0018341A /* Accelerate.framework in Frameworks */,
 				494936F6184302C0001CC484 /* QuartzCore.framework in Frameworks */,
 				446151A5184228A5000D4745 /* CoreGraphics.framework in Frameworks */,
@@ -134,6 +140,15 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		36867679533CE26C31A2096D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				36867D64CB8BC43FC1A4CF84 /* YQEvent.m */,
+				36867BC873380284B22FF632 /* YQEvent.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		44615196184228A5000D4745 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +174,7 @@
 		446151A1184228A5000D4745 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4937D87E1847580400A802E7 /* Reveal.framework */,
 				49A8E81B18434BDA0018341A /* Accelerate.framework */,
 				446151A2184228A5000D4745 /* Foundation.framework */,
 				446151A4184228A5000D4745 /* CoreGraphics.framework */,
@@ -178,6 +194,7 @@
 				446151B2184228A5000D4745 /* YQAppDelegate.m */,
 				446151B4184228A5000D4745 /* Images.xcassets */,
 				446151A9184228A5000D4745 /* Supporting Files */,
+				36867679533CE26C31A2096D /* Model */,
 			);
 			path = RecordMe;
 			sourceTree = "<group>";
@@ -405,6 +422,7 @@
 				446151D618423CBA000D4745 /* YQMainViewController.m in Sources */,
 				49A0EAEE18444A7E004B8D31 /* YQListViewController.m in Sources */,
 				494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */,
+				36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +544,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/twer/Downloads,
+					/Users/twer/Development/RecordMe/Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
 				INFOPLIST_FILE = "RecordMe/RecordMe-Info.plist";
@@ -540,6 +563,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/twer/Downloads,
+					/Users/twer/Development/RecordMe/Framework,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RecordMe/RecordMe-Prefix.pch";
 				INFOPLIST_FILE = "RecordMe/RecordMe-Info.plist";

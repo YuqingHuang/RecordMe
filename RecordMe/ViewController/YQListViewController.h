@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YQListViewController : UIViewController
+static NSString *const cellIdentifier = @"eventCell";
+
+@interface YQListViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@property (strong, nonatomic) IBOutlet UITableView *eventList;
 
 @end
