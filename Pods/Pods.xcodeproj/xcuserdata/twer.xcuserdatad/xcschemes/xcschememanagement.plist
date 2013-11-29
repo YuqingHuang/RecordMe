@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Pods-RecordMe-sqlite3.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>Pods-RecordMe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -17,6 +22,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>32F2D87554684793BD09B14F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>40331FD0AD4543DB86B9E6C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6A4E114D32A34C5BBBCF5476</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>CBB012A59FE049ED932CC51F</key>
 		<dict>
 			<key>primary</key>
