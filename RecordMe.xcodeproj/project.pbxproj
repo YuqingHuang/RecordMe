@@ -43,6 +43,7 @@
 		49A8E82D18434D340018341A /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82418434D330018341A /* enter.png */; };
 		49A8E82E18434D340018341A /* file.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82518434D340018341A /* file.png */; };
 		49A8E82F18434D340018341A /* github.png in Resources */ = {isa = PBXBuildFile; fileRef = 49A8E82618434D340018341A /* github.png */; };
+		49D8F1EF184DD58500BC1C41 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D8F1EE184DD58500BC1C41 /* DBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,8 @@
 		49A8E82418434D330018341A /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
 		49A8E82518434D340018341A /* file.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = file.png; sourceTree = "<group>"; };
 		49A8E82618434D340018341A /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		49D8F1ED184DD58500BC1C41 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		49D8F1EE184DD58500BC1C41 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordMe.xcconfig"; path = "Pods/Pods-RecordMe.xcconfig"; sourceTree = "<group>"; };
 		D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -188,6 +191,7 @@
 		446151A8184228A5000D4745 /* RecordMe */ = {
 			isa = PBXGroup;
 			children = (
+				49D8F1EC184DD48F00BC1C41 /* DBUtil */,
 				49A0EAEA18444A2E004B8D31 /* ViewController */,
 				494936F11842F572001CC484 /* View */,
 				446151B1184228A5000D4745 /* YQAppDelegate.h */,
@@ -270,6 +274,15 @@
 			path = icons;
 			sourceTree = "<group>";
 		};
+		49D8F1EC184DD48F00BC1C41 /* DBUtil */ = {
+			isa = PBXGroup;
+			children = (
+				49D8F1ED184DD58500BC1C41 /* DBManager.h */,
+				49D8F1EE184DD58500BC1C41 /* DBManager.m */,
+			);
+			path = DBUtil;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,7 +334,7 @@
 				ORGANIZATIONNAME = YQ;
 				TargetAttributes = {
 					446151B9184228A5000D4745 = {
-						TestTargetID = 4461519E184228A5000D4745;
+						TestTargetID = 4461519E184228A5000D4745 /* RecordMe */;
 					};
 				};
 			};
@@ -417,6 +430,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D8F1EF184DD58500BC1C41 /* DBManager.m in Sources */,
 				446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */,
 				446151AF184228A5000D4745 /* main.m in Sources */,
 				446151D618423CBA000D4745 /* YQMainViewController.m in Sources */,
