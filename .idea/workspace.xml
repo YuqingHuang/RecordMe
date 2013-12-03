@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7971502b-f38b-458f-b267-a085b9648429" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RecordMe/DBUtil/DBManager.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RecordMe/DBUtil/DBManager.m" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe.xcworkspace/xcuserdata/twer.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/RecordMe.xcworkspace/xcuserdata/twer.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe.xcodeproj/xcuserdata/twer.xcuserdatad/xcschemes/RecordMeTests.xcscheme" afterPath="$PROJECT_DIR$/RecordMe.xcodeproj/xcuserdata/twer.xcuserdatad/xcschemes/RecordMeTests.xcscheme" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.h" afterPath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.h" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m" afterPath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.xib" afterPath="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.xib" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RecordMe.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/RecordMe.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/twer.xcuserdatad/xcschemes/xcschememanagement.plist" afterPath="$PROJECT_DIR$/Pods/Pods.xcodeproj/xcuserdata/twer.xcuserdatad/xcschemes/xcschememanagement.plist" />
     </list>
     <ignored path="RecordMe.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,64 +29,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="NSTimer.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTimer.h">
+      <file leaf-file-name="DBManager.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RecordMe/DBUtil/DBManager.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="11" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+            <state line="28" column="46" selection-start="0" selection-end="3862" vertical-scroll-proportion="0.47567567" vertical-offset="0" max-vertical-offset="2376">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NSDateFormatter.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDateFormatter.h">
+      <file leaf-file-name="YQListViewController.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="3762">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NSDate.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="11" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1474">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YQEvent.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RecordMe/Model/YQEvent.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="41" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="462">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YQEvent.m" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RecordMe/Model/YQEvent.m">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="16" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="396">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UITableViewCell.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="206" column="77" selection-start="11459" selection-end="11474" vertical-scroll-proportion="0.0" vertical-offset="3778" max-vertical-offset="5060">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UITableView.h" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="501" column="40" selection-start="29261" selection-end="29261" vertical-scroll-proportion="0.0" vertical-offset="9828" max-vertical-offset="11110">
+            <state line="52" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
               <folding />
             </state>
           </provider>
@@ -97,16 +50,70 @@
       <file leaf-file-name="NSObjCRuntime.h" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="399" column="21" selection-start="17392" selection-end="17392" vertical-scroll-proportion="0.0" vertical-offset="8241" max-vertical-offset="10648">
+            <state line="399" column="21" selection-start="17392" selection-end="17392" vertical-scroll-proportion="0.0" vertical-offset="8778" max-vertical-offset="10758">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YQListViewController.m" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m">
+      <file leaf-file-name="UITableView.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.8833977" vertical-offset="0" max-vertical-offset="1430">
+            <state line="501" column="40" selection-start="29261" selection-end="29261" vertical-scroll-proportion="0.0" vertical-offset="11022" max-vertical-offset="11220">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UITableViewCell.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="206" column="77" selection-start="11459" selection-end="11474" vertical-scroll-proportion="0.0" vertical-offset="4532" max-vertical-offset="5170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YQEvent.m" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordMe/Model/YQEvent.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="16" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="198" max-vertical-offset="396">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YQEvent.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RecordMe/Model/YQEvent.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="41" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="462">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSDate.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="11" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="1474">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSDateFormatter.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDateFormatter.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="59" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="1298" max-vertical-offset="3784">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NSTimer.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTimer.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="11" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="154" max-vertical-offset="814">
               <folding />
             </state>
           </provider>
@@ -135,6 +142,7 @@
         <option value="$PROJECT_DIR$/RecordMe/View/YQCircularImageView.m" />
         <option value="$PROJECT_DIR$/RecordMe/Model/YQEvent.h" />
         <option value="$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m" />
+        <option value="$PROJECT_DIR$/RecordMe/DBUtil/DBManager.m" />
       </list>
     </option>
   </component>
@@ -214,6 +222,24 @@
               <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecordMe" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RecordMe" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DBUtil" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -245,9 +271,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <configuration default="false" name="RecordMeAutoTest" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="RecordMeAutoTest" PROJECT_NAME="RecordMe" TARGET_NAME="RecordMeAutoTest" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="RecordMe" RUN_TARGET_NAME="RecordMeAutoTest" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.RecordMe" />
       <item index="1" class="java.lang.String" itemvalue="XCTest/Kiwi.RecordMeTests" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RecordMeAutoTest" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -261,12 +292,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="2556" height="1418" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.670446" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.670446" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -295,9 +326,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/RecordMe/View/YQCircularImageView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="752" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1012">
-          <folding />
-        </state>
+        <state line="30" column="0" selection-start="752" selection-end="944" vertical-scroll-proportion="0.0" vertical-offset="660" max-vertical-offset="1012" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RecordMe/YQMainViewController.m">
@@ -309,23 +338,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RecordMe/View/YQCircularImageView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="440">
-          <folding />
-        </state>
+        <state line="10" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="220" max-vertical-offset="440" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RecordMe/View/YQCircularImageView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418">
-          <folding />
-        </state>
+        <state line="10" column="17" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="418" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RecordMe/View/YQCircularImageView.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="752" selection-end="944" vertical-scroll-proportion="0.5096525" vertical-offset="0" max-vertical-offset="1295">
-          <folding />
-        </state>
+        <state line="30" column="0" selection-start="752" selection-end="944" vertical-scroll-proportion="0.5096525" vertical-offset="0" max-vertical-offset="1295" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RecordMe/YQMainViewController.m">
@@ -335,23 +358,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTimer.h">
+    <entry file="file://$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="11" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
+        <state line="52" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1276">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1474">
+        <state line="399" column="21" selection-start="17392" selection-end="17392" vertical-scroll-proportion="0.0" vertical-offset="8241" max-vertical-offset="10648">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDateFormatter.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="3762">
+        <state line="501" column="40" selection-start="29261" selection-end="29261" vertical-scroll-proportion="0.0" vertical-offset="9828" max-vertical-offset="11110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="77" selection-start="11459" selection-end="11474" vertical-scroll-proportion="0.0" vertical-offset="3778" max-vertical-offset="5060">
           <folding />
         </state>
       </provider>
@@ -370,30 +400,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDate.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="206" column="77" selection-start="11459" selection-end="11474" vertical-scroll-proportion="0.0" vertical-offset="3778" max-vertical-offset="5060">
+        <state line="14" column="11" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="179" max-vertical-offset="1474">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDateFormatter.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="501" column="40" selection-start="29261" selection-end="29261" vertical-scroll-proportion="0.0" vertical-offset="9828" max-vertical-offset="11110">
+        <state line="59" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="3762">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSObjCRuntime.h">
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTimer.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="21" selection-start="17392" selection-end="17392" vertical-scroll-proportion="0.0" vertical-offset="8241" max-vertical-offset="10648">
+        <state line="7" column="11" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="792">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RecordMe/ViewController/YQListViewController.m">
+    <entry file="file://$PROJECT_DIR$/RecordMe/DBUtil/DBManager.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1280" selection-end="1280" vertical-scroll-proportion="0.8833977" vertical-offset="0" max-vertical-offset="1430">
+        <state line="28" column="46" selection-start="0" selection-end="3862" vertical-scroll-proportion="0.47567567" vertical-offset="0" max-vertical-offset="2376">
           <folding />
         </state>
       </provider>

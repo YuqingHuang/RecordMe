@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0460"
+   LastUpgradeVersion = "0500"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "446151B9184228A5000D4745"
-               BuildableName = "RecordMeTests.xctest"
-               BlueprintName = "RecordMeTests"
+               BlueprintIdentifier = "49BCFA72184D794F003D119C"
+               BuildableName = "RecordMe.app"
+               BlueprintName = "RecordMeAutoTest"
                ReferencedContainer = "container:RecordMe.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,17 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "446151B9184228A5000D4745"
-               BuildableName = "RecordMeTests.xctest"
-               BlueprintName = "RecordMeTests"
-               ReferencedContainer = "container:RecordMe.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "49BCFA72184D794F003D119C"
+            BuildableName = "RecordMe.app"
+            BlueprintName = "RecordMeAutoTest"
+            ReferencedContainer = "container:RecordMe.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -49,6 +48,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "49BCFA72184D794F003D119C"
+            BuildableName = "RecordMe.app"
+            BlueprintName = "RecordMeAutoTest"
+            ReferencedContainer = "container:RecordMe.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -58,6 +66,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "49BCFA72184D794F003D119C"
+            BuildableName = "RecordMe.app"
+            BlueprintName = "RecordMeAutoTest"
+            ReferencedContainer = "container:RecordMe.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
