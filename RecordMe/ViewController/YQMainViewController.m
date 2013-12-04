@@ -9,6 +9,7 @@
 #import "YQMainViewController.h"
 #import "YQCircularImageView.h"
 #import "YQListViewController.h"
+#import "YQAddEventViewController.h"
 #import <RNGridMenu.h>
 
 @interface YQMainViewController ()
@@ -72,6 +73,6 @@
 }
 
 - (void)addEvent {
-    
+    YQAddEventViewController *addEventVC = [[YQAddEventViewController alloc] initWithNibName:@"YQAddEventViewController" bundle:nil];
 }
 @end

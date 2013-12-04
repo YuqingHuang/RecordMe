@@ -8,7 +8,7 @@ static sqlite3_stmt *statement = nil;
 
 + (DBManager *)getSharedInstance {
     if (!sharedInstance) {
-        sharedInstance = [[super alloc] init];
+        sharedInstance = [[self alloc] init];
         [sharedInstance createDB];
     }
     return sharedInstance;
@@ -20,14 +20,16 @@ static sqlite3_stmt *statement = nil;
     NSString *docsDir = dirPaths[0];
     // Build the path to the database file
     databasePath = [[NSString alloc] initWithString:[docsDir stringByAppendingPathComponent:@"recordme.db"]];
-    
+
     BOOL isSuccess = YES;
     NSFileManager *filemgr = [NSFileManager defaultManager];
-    if ([filemgr fileExistsAtPath:databasePath] == NO) {
+    if (![filemgr fileExistsAtPath:databasePath]) {
         const char *dbpath = [databasePath UTF8String];
         if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
             char *errMsg;
-            const char *sql_stmt = "create table if not exists events (regno integer primary key, content text, date text, status text)";
+            NSString *sql_stmt_str = [NSString stringWithFormat:@"create table if not exists %@ "
+                    "(id integer primary key autoincrement, %@ text, %@ text, %@ text, %@ text, %@ text)", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_DURATION_ACTUAL, KEY_STATUS];
+            const char *sql_stmt = [sql_stmt_str UTF8String];
             if (sqlite3_exec(database, sql_stmt, NULL, NULL, &errMsg) != SQLITE_OK) {
                 isSuccess = NO;
                 NSLog(@"Failed to create table");
@@ -43,28 +45,27 @@ static sqlite3_stmt *statement = nil;
     return isSuccess;
 }
 
-- (BOOL)saveData:(NSString *)registerNumber name:(NSString *)name department:(NSString *)department year:(NSString *)year {
+- (BOOL)createData:(NSString *)id content:(NSString *)content date:(NSString *)date duration:(NSObject *)duration {
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *insertSQL = [NSString stringWithFormat:@"insert into studentsDetail(regno, name, department, year) values"
-                "(\"%d\",\"%@\", \"%@\", \"%@\")", [registerNumber integerValue], name, department, year];
+        NSString *insertSQL = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@) values"
+                                                                 "(\"%@\", \"%@\", \"%@\", \"%@\")", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_STATUS, content, date, duration, STATUS_NEW];
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(database, insert_stmt, -1, &statement, NULL);
-        if (sqlite3_step(statement) == SQLITE_DONE) {
-            return YES;
-        } else {
-            return NO;
-        }
+
+        int executeResult = sqlite3_step(statement);
         sqlite3_reset(statement);
+
+        return executeResult == SQLITE_DONE;
     }
     return NO;
 }
 
-- (NSArray *)findByRegisterNumber:(NSString *)registerNumber {
+- (NSArray *)findByDate:(NSString *)date {
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *querySQL = [NSString stringWithFormat:@"select name, department, year from studentsDetail where"
-                            "regno =\"%@\"", registerNumber];
+        NSString *querySQL = [NSString stringWithFormat:@"select %@, %@, %@ from %@ where"
+                                                                "date =\"%@\"", KEY_CONTENT, KEY_DATE, KEY_STATUS, KEY_EVENT_TABLE, date];
         const char *query_stmt = [querySQL UTF8String];
         NSMutableArray *resultArray = [[NSMutableArray alloc] init];
         if (sqlite3_prepare_v2(database,

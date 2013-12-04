@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "446151B9184228A5000D4745"
-               BuildableName = "RecordMeTests.xctest"
+               BuildableName = "RecordMeTests"
                BlueprintName = "RecordMeTests"
                ReferencedContainer = "container:RecordMe.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "446151B9184228A5000D4745"
-               BuildableName = "RecordMeTests.xctest"
+               BuildableName = "RecordMeTests"
                BlueprintName = "RecordMeTests"
                ReferencedContainer = "container:RecordMe.xcodeproj">
             </BuildableReference>
