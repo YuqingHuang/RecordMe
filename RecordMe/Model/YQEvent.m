@@ -20,4 +20,18 @@
     return self;
 }
 
+- (id)initWithId:(NSString *)id date:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration actualDuration:(NSString *)actualDuration status:(NSString *)status {
+    self = [super init];
+    if (self) {
+        self.id = id;
+        self.date = date;
+        self.content = content;
+        self.estimatedDuration = estimatedDuration;
+        self.actualDuration = actualDuration;
+        self.status = status;
+    }
+
+    return self;
+}
+
 @end

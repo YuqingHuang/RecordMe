@@ -11,6 +11,7 @@ static NSString *const STATUS_NEW = @"NEW";
 
 @interface YQEvent : NSObject
 
+@property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSString *date;
 @property (nonatomic, strong) NSString *content;
 @property (nonatomic, strong) NSString *estimatedDuration;
@@ -18,5 +19,8 @@ static NSString *const STATUS_NEW = @"NEW";
 @property (nonatomic, strong) NSString *status;
 
 - (instancetype)initWithDate:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration;
+
+- (id)initWithId:(NSString *)id date:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration actualDuration:(NSString *)actualDuration status:(NSString *)status;
+
 
 @end

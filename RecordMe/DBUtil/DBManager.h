@@ -20,8 +20,6 @@ static NSString *const KEY_EVENT_TABLE = @"events";
 
 + (DBManager*)getSharedInstance;
 
-- (BOOL)createDB;
-
 - (BOOL)createEventWithContent:(NSString *)content date:(NSString *)date estimatedDuration:(NSString *)duration status:(NSString *)status;
 
 - (NSArray *)allDataFromTable:(NSString * const)table;

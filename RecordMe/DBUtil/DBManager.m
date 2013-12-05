@@ -1,4 +1,5 @@
 #import "DBManager.h"
+#import "YQEvent.h"
 
 static DBManager *sharedInstance = nil;
 static sqlite3 *database = nil;
@@ -63,7 +64,7 @@ static sqlite3_stmt *statement = nil;
 }
 
 - (NSArray *)allDataFromTable:(NSString * const)table {
-    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
+    NSMutableArray *dataArray = [[NSMutableArray alloc] init];
     const char *dbpath = [databasePath UTF8String];
     
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
@@ -72,9 +73,15 @@ static sqlite3_stmt *statement = nil;
         
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
             while (sqlite3_step(statement) == SQLITE_ROW){
-                NSLog(@"%s",sqlite3_column_text(statement,0));
-                NSLog(@"%s",sqlite3_column_text(statement,1));
-                NSLog(@"%s",sqlite3_column_text(statement,2));
+                NSString *id = [NSString stringWithUTF8String:sqlite3_column_text(statement,0)];
+                NSString *content = [NSString stringWithUTF8String:sqlite3_column_text(statement,1)];
+                NSString *date = [NSString stringWithUTF8String:sqlite3_column_text(statement,2)];
+                NSString *estimatedDuration = [NSString stringWithUTF8String:sqlite3_column_text(statement,3)];
+                NSString *actualDuration = [NSString stringWithUTF8String:sqlite3_column_text(statement,4)];
+                NSString *status = [NSString stringWithUTF8String:sqlite3_column_text(statement,5)];
+
+                YQEvent *event = [[YQEvent alloc] initWithId:id date:date content:content estimatedDuration:estimatedDuration actualDuration:actualDuration status:status];
+                [dataArray addObject:event];
             }
 
             sqlite3_reset(statement);
@@ -82,6 +89,6 @@ static sqlite3_stmt *statement = nil;
             NSLog(@"error msg %s",sqlite3_errmsg(database));
         }
     }
-    return nil;
+    return dataArray;
 }
 @end
