@@ -45,51 +45,43 @@ static sqlite3_stmt *statement = nil;
     return isSuccess;
 }
 
-- (BOOL)createData:(NSString *)id content:(NSString *)content date:(NSString *)date duration:(NSObject *)duration {
+- (BOOL)createEventWithContent:(NSString *)content date:(NSString *)date estimatedDuration:(NSString *)duration status:(NSString *)status {
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
         NSString *insertSQL = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@) values"
-                                                                 "(\"%@\", \"%@\", \"%@\", \"%@\")", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_STATUS, content, date, duration, STATUS_NEW];
+                                                                 "(\"%@\", \"%@\", \"%@\", \"%@\")", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_STATUS, content, date, duration, status];
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(database, insert_stmt, -1, &statement, NULL);
 
         int executeResult = sqlite3_step(statement);
         sqlite3_reset(statement);
 
+        NSLog(@"insert new data %@", executeResult == SQLITE_DONE? @"Suc": @"Fail");
         return executeResult == SQLITE_DONE;
     }
     return NO;
 }
 
-- (NSArray *)findByDate:(NSString *)date {
+- (NSArray *)allDataFromTable:(NSString * const)table {
+    NSMutableArray *resultArray = [[NSMutableArray alloc] init];
     const char *dbpath = [databasePath UTF8String];
+    
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *querySQL = [NSString stringWithFormat:@"select %@, %@, %@ from %@ where"
-                                                                "date =\"%@\"", KEY_CONTENT, KEY_DATE, KEY_STATUS, KEY_EVENT_TABLE, date];
+        NSString *querySQL = [NSString stringWithFormat:@"select * from %@", table];
         const char *query_stmt = [querySQL UTF8String];
-        NSMutableArray *resultArray = [[NSMutableArray alloc] init];
-        if (sqlite3_prepare_v2(database,
-                query_stmt, -1, &statement, NULL) == SQLITE_OK) {
-            if (sqlite3_step(statement) == SQLITE_ROW) {
-                NSString *name = [[NSString alloc] initWithUTF8String:
-                        (const char *) sqlite3_column_text(statement, 0)];
-                [resultArray addObject:name];
-                NSString *department = [[NSString alloc] initWithUTF8String:
-                        (const char *) sqlite3_column_text(statement, 1)];
-                [resultArray addObject:department];
-                NSString *year = [[NSString alloc] initWithUTF8String:
-                        (const char *) sqlite3_column_text(statement, 2)];
-                [resultArray addObject:year];
-                return resultArray;
+        
+        if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
+            while (sqlite3_step(statement) == SQLITE_ROW){
+                NSLog(@"%s",sqlite3_column_text(statement,0));
+                NSLog(@"%s",sqlite3_column_text(statement,1));
+                NSLog(@"%s",sqlite3_column_text(statement,2));
             }
-            else {
-                NSLog(@"Not found");
-                return nil;
-            }
+
             sqlite3_reset(statement);
+        } else {
+            NSLog(@"error msg %s",sqlite3_errmsg(database));
         }
     }
     return nil;
 }
-
 @end

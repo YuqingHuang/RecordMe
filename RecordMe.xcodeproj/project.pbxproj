@@ -46,6 +46,7 @@
 		49E3A139184F21A3006E99E7 /* YQAddEventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E3A137184F21A3006E99E7 /* YQAddEventViewController.xib */; };
 		49E3A13D184F21DA006E99E7 /* YQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3A13B184F21DA006E99E7 /* YQMainViewController.m */; };
 		49E3A13E184F21DA006E99E7 /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E3A13C184F21DA006E99E7 /* YQMainViewController.xib */; };
+		49E3A14118505A6E006E99E7 /* YQEventDBConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3A14018505A6E006E99E7 /* YQEventDBConnector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,8 @@
 		49E3A13A184F21DA006E99E7 /* YQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQMainViewController.h; sourceTree = "<group>"; };
 		49E3A13B184F21DA006E99E7 /* YQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQMainViewController.m; sourceTree = "<group>"; };
 		49E3A13C184F21DA006E99E7 /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
+		49E3A13F18505A6E006E99E7 /* YQEventDBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEventDBConnector.h; sourceTree = "<group>"; };
+		49E3A14018505A6E006E99E7 /* YQEventDBConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEventDBConnector.m; sourceTree = "<group>"; };
 		78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordMe.xcconfig"; path = "Pods/Pods-RecordMe.xcconfig"; sourceTree = "<group>"; };
 		D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -287,6 +290,8 @@
 			children = (
 				49D8F1ED184DD58500BC1C41 /* DBManager.h */,
 				49D8F1EE184DD58500BC1C41 /* DBManager.m */,
+				49E3A13F18505A6E006E99E7 /* YQEventDBConnector.h */,
+				49E3A14018505A6E006E99E7 /* YQEventDBConnector.m */,
 			);
 			path = DBUtil;
 			sourceTree = "<group>";
@@ -442,6 +447,7 @@
 				49D8F1EF184DD58500BC1C41 /* DBManager.m in Sources */,
 				49E3A138184F21A3006E99E7 /* YQAddEventViewController.m in Sources */,
 				446151B3184228A5000D4745 /* YQAppDelegate.m in Sources */,
+				49E3A14118505A6E006E99E7 /* YQEventDBConnector.m in Sources */,
 				446151AF184228A5000D4745 /* main.m in Sources */,
 				49A0EAEE18444A7E004B8D31 /* YQListViewController.m in Sources */,
 				494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */,
@@ -492,7 +498,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -532,7 +537,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -603,7 +607,6 @@
 		446151CF184228A5000D4745 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecordMe.app/RecordMe";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -626,7 +629,6 @@
 		446151D0184228A5000D4745 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RecordMe.app/RecordMe";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

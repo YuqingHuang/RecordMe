@@ -6,8 +6,18 @@
 
 #import "YQEvent.h"
 
+@implementation YQEvent
 
-@implementation YQEvent {
+- (instancetype)initWithDate:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration {
+    self = [super init];
+    if (self) {
+        self.date = date;
+        self.content = content;
+        self.estimatedDuration = estimatedDuration;
+        self.status = STATUS_NEW;
+    }
 
+    return self;
 }
+
 @end

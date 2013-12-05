@@ -7,10 +7,7 @@
 //
 
 #import "YQListViewController.h"
-
-@interface YQListViewController ()
-
-@end
+#import "YQEventDBConnector.h"
 
 @implementation YQListViewController {
     NSArray *_array;
@@ -20,14 +17,15 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {        
-        _array = @[@"1st line", @"2nd line", @"3rd line"];
+        _array = [YQEventDBConnector eventsList];
+//  @[@"1st line", @"2nd line", @"3rd line"];
     }
     return self;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
+    self.navigationController.navigationBarHidden = NO;
 }
 
 #pragma table view data source methods
@@ -43,7 +41,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
 
-    cell.text = _array[(NSUInteger) indexPath.row];
+    cell.textLabel.text = _array[(NSUInteger) indexPath.row];
 
     return cell;
 }

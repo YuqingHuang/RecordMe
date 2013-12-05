@@ -18,15 +18,6 @@
 
 @implementation YQMainViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = YES;
@@ -47,12 +38,7 @@
     [self.view addSubview:avatar];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
+#pragma 
 - (void)showGrid {
     NSInteger numberOfOptions = 4;
     NSArray *items = @[[[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"arrow"] title:@"List" action:^{[self displayList];}],
@@ -63,7 +49,6 @@
     
     RNGridMenu *av = [[RNGridMenu alloc] initWithItems:[items subarrayWithRange:NSMakeRange(0, numberOfOptions)]];
     av.delegate = self;
-    //    av.bounces = NO;
     [av showInViewController:self center:CGPointMake(self.view.bounds.size.width/2.f, self.view.bounds.size.height/2.f)];
 }
 
@@ -74,5 +59,6 @@
 
 - (void)addEvent {
     YQAddEventViewController *addEventVC = [[YQAddEventViewController alloc] initWithNibName:@"YQAddEventViewController" bundle:nil];
+    [self.navigationController pushViewController:addEventVC animated:YES];
 }
 @end

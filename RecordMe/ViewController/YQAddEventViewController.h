@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YQAddEventViewController : UIViewController
+@interface YQAddEventViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITextView *content;
+@property (strong, nonatomic) IBOutlet UIPickerView *duration;
+- (IBAction)submit:(id)sender;
 
 @end
