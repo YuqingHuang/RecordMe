@@ -4,6 +4,7 @@
 //
 
 
+#import "DBManager.h"
 #import "YQEvent.h"
 
 @implementation YQEvent
@@ -35,4 +36,15 @@
     return self;
 }
 
++ (YQEvent *)eventFromStatement:(sqlite3_stmt *)stmt {
+    NSString *id = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 0)];
+    NSString *content = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 1)];
+    NSString *date = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 2)];
+    NSString *estimatedDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 3)];
+    NSString *status = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 5)];
+    NSString *actualDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(stmt, 4)];
+
+    YQEvent *event = [[YQEvent alloc] initWithId:id date:date content:content estimatedDuration:estimatedDuration actualDuration:actualDuration status:status];
+    return event;
+}
 @end

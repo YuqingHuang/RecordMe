@@ -5,6 +5,7 @@
 
 
 #import <Foundation/Foundation.h>
+#import <sqlite3.h>
 
 //several status types here
 static NSString *const STATUS_NEW = @"NEW";
@@ -22,5 +23,5 @@ static NSString *const STATUS_NEW = @"NEW";
 
 - (id)initWithId:(NSString *)id date:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration actualDuration:(NSString *)actualDuration status:(NSString *)status;
 
-
++ (YQEvent *)eventFromStatement:(sqlite3_stmt *)stmt;
 @end

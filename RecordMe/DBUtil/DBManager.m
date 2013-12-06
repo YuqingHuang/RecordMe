@@ -73,17 +73,8 @@ static sqlite3_stmt *statement = nil;
         
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
             while (sqlite3_step(statement) == SQLITE_ROW){
-                NSString *id = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 0)];
-                NSString *content = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 1)];
-                NSString *date = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 2)];
-                NSString *estimatedDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 3)];
-                NSString *status = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 5)];
-                NSString *actualDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 4)];
-
-                YQEvent *event = [[YQEvent alloc] initWithId:id date:date content:content estimatedDuration:estimatedDuration actualDuration:actualDuration status:status];
-                [dataArray addObject:event];
+                [dataArray addObject:[YQEvent eventFromStatement:statement]];
             }
-
             sqlite3_reset(statement);
         } else {
             NSLog(@"error msg %s",sqlite3_errmsg(database));
@@ -91,4 +82,5 @@ static sqlite3_stmt *statement = nil;
     }
     return dataArray;
 }
+
 @end
