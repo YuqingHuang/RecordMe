@@ -67,6 +67,7 @@
 
 - (IBAction)submit:(id)sender {
     NSString *theContent = self.content.text;
+    NSLog(@"content:%@", theContent);
     NSString *theEstimatedDuration = _durationChoices[[self.duration selectedRowInComponent:0]];
     NSString *theDate = [self currentDate];
 

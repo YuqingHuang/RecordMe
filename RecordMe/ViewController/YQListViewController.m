@@ -32,7 +32,7 @@
 #pragma table view data source methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"number of rows:%d", _array.count);
+    NSLog(@"[YQ] number of events from DB is: %d", _array.count);
     return _array.count;
 }
 
@@ -43,10 +43,26 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
 
+    UISwipeGestureRecognizer *swipeRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeCell:)];
+    swipeRecognizer.direction = UISwipeGestureRecognizerDirectionLeft;
+    [cell addGestureRecognizer:swipeRecognizer];
+    
     YQEvent *cellEvent = _array[(NSUInteger) indexPath.row];
     cell.textLabel.text = cellEvent.content;
 
+    NSString *statusImageName = [cellEvent.status isEqualToString:STATUS_NEW] ? NEW_STATUS_IMAGE : FINISHED_STATUS_IMAGE;
+    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:statusImageName]];
+
     return cell;
+}
+
+- (void)swipeCell:(id)sender {
+
+    NSLog(@"I'm swiping cell");
+    
+    //start to finish this task
+    
+    
 }
 
 

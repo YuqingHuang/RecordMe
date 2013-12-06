@@ -47,6 +47,8 @@
 		49E3A13D184F21DA006E99E7 /* YQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3A13B184F21DA006E99E7 /* YQMainViewController.m */; };
 		49E3A13E184F21DA006E99E7 /* YQMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49E3A13C184F21DA006E99E7 /* YQMainViewController.xib */; };
 		49E3A14118505A6E006E99E7 /* YQEventDBConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 49E3A14018505A6E006E99E7 /* YQEventDBConnector.m */; };
+		49E831CA1851AD1C009FE80A /* finished.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E831C81851AD1C009FE80A /* finished.png */; };
+		49E831CB1851AD1C009FE80A /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = 49E831C91851AD1C009FE80A /* new.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +112,8 @@
 		49E3A13C184F21DA006E99E7 /* YQMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YQMainViewController.xib; sourceTree = "<group>"; };
 		49E3A13F18505A6E006E99E7 /* YQEventDBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEventDBConnector.h; sourceTree = "<group>"; };
 		49E3A14018505A6E006E99E7 /* YQEventDBConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEventDBConnector.m; sourceTree = "<group>"; };
+		49E831C81851AD1C009FE80A /* finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finished.png; sourceTree = "<group>"; };
+		49E831C91851AD1C009FE80A /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.png; sourceTree = "<group>"; };
 		78A344355F034F958F572860 /* Pods-RecordMe.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordMe.xcconfig"; path = "Pods/Pods-RecordMe.xcconfig"; sourceTree = "<group>"; };
 		D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecordMe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -268,6 +272,8 @@
 		49A8E81D18434D330018341A /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				49E831C81851AD1C009FE80A /* finished.png */,
+				49E831C91851AD1C009FE80A /* new.png */,
 				4415807318438B9D00D8ECE3 /* add.png */,
 				4415807418438B9D00D8ECE3 /* calendar.png */,
 				4415807518438B9D00D8ECE3 /* heart.png */,
@@ -383,11 +389,13 @@
 				49A8E82F18434D340018341A /* github.png in Resources */,
 				49E3A139184F21A3006E99E7 /* YQAddEventViewController.xib in Resources */,
 				446151AD184228A5000D4745 /* InfoPlist.strings in Resources */,
+				49E831CA1851AD1C009FE80A /* finished.png in Resources */,
 				49A8E82D18434D340018341A /* enter.png in Resources */,
 				4415807818438B9D00D8ECE3 /* calendar.png in Resources */,
 				49A0EAEF18444A7E004B8D31 /* YQListViewController.xib in Resources */,
 				4415807718438B9D00D8ECE3 /* add.png in Resources */,
 				49E3A13E184F21DA006E99E7 /* YQMainViewController.xib in Resources */,
+				49E831CB1851AD1C009FE80A /* new.png in Resources */,
 				446151B5184228A5000D4745 /* Images.xcassets in Resources */,
 				36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */,
 				49A8E82718434D340018341A /* arrow.png in Resources */,
