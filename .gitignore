@@ -1,0 +1,12 @@
+_Store
+.idea
+Pods
+*.lock
+
+#xcode Noise
+build/*
+*.pbxuser
+*.mode2v3
+*.mode1v3
+*.xcworkspace
+xcuserdata
