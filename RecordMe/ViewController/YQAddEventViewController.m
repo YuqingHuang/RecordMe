@@ -32,12 +32,21 @@
     return 20.f;
 }
 
+#pragma UIAlertViewDelegate methods
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    //we only have 1 cancel button on current alert view
+    NSString *buttonTitle = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([buttonTitle isEqualToString:SUC_SAVE_BUTTON_TITLE]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+
+}
+
 #pragma ViewController flow
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _durationChoices = @[@"20",@"30",@"40",@"50"];
+        _durationChoices = @[@"20", @"30", @"40", @"50"];
     }
     return self;
 }
@@ -49,7 +58,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.duration selectRow:_durationChoices.count/2 inComponent:0 animated:NO];
+    [self.duration selectRow:_durationChoices.count / 2 inComponent:0 animated:NO];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -62,8 +71,12 @@
     NSString *theDate = [self currentDate];
 
     YQEvent *event = [[YQEvent alloc] initWithDate:theDate content:theContent estimatedDuration:theEstimatedDuration];
-    
-    [YQEventDBConnector saveEventToDB:event];
+    BOOL saveResult = [YQEventDBConnector saveEventToDB:event];
+    NSString *message = saveResult ? SUC_SAVE_MESSAGE : FAIL_SAVE_MESSAGE;
+    NSString *cancelBtnTitle = saveResult ? SUC_SAVE_BUTTON_TITLE : FAIL_SAVE_BUTTON_TITLE;
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Save Event" message:message delegate:self cancelButtonTitle:cancelBtnTitle otherButtonTitles:nil];
+    [alert show];
 }
 
 - (NSString *)currentDate {

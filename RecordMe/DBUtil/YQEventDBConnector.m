@@ -12,8 +12,8 @@
 
 @implementation YQEventDBConnector
 
-+ (void)saveEventToDB:(YQEvent *)event {
-    [[DBManager getSharedInstance] createEventWithContent:event.content date:event.date estimatedDuration:event.estimatedDuration actualDuration:nil status:event.status];
++ (BOOL)saveEventToDB:(YQEvent *)event {
+    return [[DBManager getSharedInstance] createEventWithContent:event.content date:event.date estimatedDuration:event.estimatedDuration actualDuration:nil status:event.status];
 }
 
 + (NSArray *)eventsList {

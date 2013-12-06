@@ -12,7 +12,7 @@
 
 @interface YQEventDBConnector : NSObject
 
-+ (void)saveEventToDB:(YQEvent *)event;
++ (BOOL)saveEventToDB:(YQEvent *)event;
 
 + (NSArray *)eventsList;
 @end

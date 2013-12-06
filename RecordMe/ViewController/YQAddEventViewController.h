@@ -8,7 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YQAddEventViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate>
+static NSString *const SUC_SAVE_BUTTON_TITLE = @"Yeah";
+
+static NSString *const FAIL_SAVE_BUTTON_TITLE = @"Try again";
+
+static NSString *const SUC_SAVE_MESSAGE = @"Successfully";
+
+static NSString *const FAIL_SAVE_MESSAGE = @"Failed";
+
+@interface YQAddEventViewController : UIViewController<UIPickerViewDataSource, UIPickerViewDelegate, UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextView *content;
 @property (strong, nonatomic) IBOutlet UIPickerView *duration;
