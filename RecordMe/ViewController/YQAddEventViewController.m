@@ -52,6 +52,10 @@
     [self.duration selectRow:_durationChoices.count/2 inComponent:0 animated:NO];
 }
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.content resignFirstResponder];
+}
+
 - (IBAction)submit:(id)sender {
     NSString *theContent = self.content.text;
     NSString *theEstimatedDuration = _durationChoices[[self.duration selectedRowInComponent:0]];
