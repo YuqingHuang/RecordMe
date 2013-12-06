@@ -13,11 +13,10 @@
 @implementation YQEventDBConnector
 
 + (void)saveEventToDB:(YQEvent *)event {
-    [[DBManager getSharedInstance] createEventWithContent:event.content date:event.date estimatedDuration:event.estimatedDuration status:event.status];
+    [[DBManager getSharedInstance] createEventWithContent:event.content date:event.date estimatedDuration:event.estimatedDuration actualDuration:nil status:event.status];
 }
 
 + (NSArray *)eventsList {
-    [[DBManager getSharedInstance] allDataFromTable:KEY_EVENT_TABLE];
-    return nil;
+    return [[DBManager getSharedInstance] allDataFromTable:KEY_EVENT_TABLE];
 }
 @end

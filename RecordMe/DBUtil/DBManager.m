@@ -46,11 +46,11 @@ static sqlite3_stmt *statement = nil;
     return isSuccess;
 }
 
-- (BOOL)createEventWithContent:(NSString *)content date:(NSString *)date estimatedDuration:(NSString *)duration status:(NSString *)status {
+- (BOOL)createEventWithContent:(NSString *)content date:(NSString *)date estimatedDuration:(NSString *)duration actualDuration:(NSString *)acDuration status:(NSString *)status {
     const char *dbpath = [databasePath UTF8String];
     if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
-        NSString *insertSQL = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@) values"
-                                                                 "(\"%@\", \"%@\", \"%@\", \"%@\")", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_STATUS, content, date, duration, status];
+        NSString *insertSQL = [NSString stringWithFormat:@"insert into %@(%@, %@, %@, %@, %@) values"
+                                                                 "(\"%@\", \"%@\", \"%@\", \"%@\", \"%@\")", KEY_EVENT_TABLE, KEY_CONTENT, KEY_DATE, KEY_DURATION_ESTIMATED, KEY_DURATION_ACTUAL, KEY_STATUS, content, date, duration, acDuration, status];
         const char *insert_stmt = [insertSQL UTF8String];
         sqlite3_prepare_v2(database, insert_stmt, -1, &statement, NULL);
 
@@ -73,12 +73,12 @@ static sqlite3_stmt *statement = nil;
         
         if (sqlite3_prepare_v2(database, query_stmt, -1, &statement, NULL) == SQLITE_OK) {
             while (sqlite3_step(statement) == SQLITE_ROW){
-                NSString *id = [NSString stringWithUTF8String:sqlite3_column_text(statement,0)];
-                NSString *content = [NSString stringWithUTF8String:sqlite3_column_text(statement,1)];
-                NSString *date = [NSString stringWithUTF8String:sqlite3_column_text(statement,2)];
-                NSString *estimatedDuration = [NSString stringWithUTF8String:sqlite3_column_text(statement,3)];
-                NSString *actualDuration = [NSString stringWithUTF8String:sqlite3_column_text(statement,4)];
-                NSString *status = [NSString stringWithUTF8String:sqlite3_column_text(statement,5)];
+                NSString *id = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 0)];
+                NSString *content = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 1)];
+                NSString *date = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 2)];
+                NSString *estimatedDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 3)];
+                NSString *status = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 5)];
+                NSString *actualDuration = [NSString stringWithUTF8String:(char const *) sqlite3_column_text(statement, 4)];
 
                 YQEvent *event = [[YQEvent alloc] initWithId:id date:date content:content estimatedDuration:estimatedDuration actualDuration:actualDuration status:status];
                 [dataArray addObject:event];

@@ -14,6 +14,7 @@
         self.date = date;
         self.content = content;
         self.estimatedDuration = estimatedDuration;
+        self.actualDuration = @"0";
         self.status = STATUS_NEW;
     }
 

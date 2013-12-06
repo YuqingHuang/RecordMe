@@ -8,6 +8,7 @@
 
 #import "YQListViewController.h"
 #import "YQEventDBConnector.h"
+#import "YQEvent.h"
 
 @implementation YQListViewController {
     NSArray *_array;
@@ -31,6 +32,7 @@
 #pragma table view data source methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"number of rows:%d", _array.count);
     return _array.count;
 }
 
@@ -41,7 +43,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
 
-    cell.textLabel.text = _array[(NSUInteger) indexPath.row];
+    YQEvent *cellEvent = _array[(NSUInteger) indexPath.row];
+    cell.textLabel.text = cellEvent.content;
 
     return cell;
 }
