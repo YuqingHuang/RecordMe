@@ -49,9 +49,7 @@
     
     YQEvent *cellEvent = _array[(NSUInteger) indexPath.row];
     cell.textLabel.text = cellEvent.content;
-
-    NSString *statusImageName = [cellEvent.status isEqualToString:STATUS_NEW] ? NEW_STATUS_IMAGE : FINISHED_STATUS_IMAGE;
-    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:statusImageName]];
+    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:cellEvent.statusImageName]];
 
     return cell;
 }

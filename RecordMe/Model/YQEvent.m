@@ -47,4 +47,8 @@
     YQEvent *event = [[YQEvent alloc] initWithId:id date:date content:content estimatedDuration:estimatedDuration actualDuration:actualDuration status:status];
     return event;
 }
+
+- (NSString *)statusImageName {
+    return [self.status isEqualToString:STATUS_NEW] ? NEW_STATUS_IMAGE : FINISHED_STATUS_IMAGE;
+}
 @end

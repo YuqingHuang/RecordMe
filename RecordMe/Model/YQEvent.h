@@ -10,6 +10,10 @@
 //several status types here
 static NSString *const STATUS_NEW = @"NEW";
 
+static NSString *const NEW_STATUS_IMAGE = @"new";
+
+static NSString *const FINISHED_STATUS_IMAGE = @"finished";
+
 @interface YQEvent : NSObject
 
 @property (nonatomic, strong) NSString *id;
@@ -24,4 +28,6 @@ static NSString *const STATUS_NEW = @"NEW";
 - (id)initWithId:(NSString *)id date:(NSString *)date content:(NSString *)content estimatedDuration:(NSString *)estimatedDuration actualDuration:(NSString *)actualDuration status:(NSString *)status;
 
 + (YQEvent *)eventFromStatement:(sqlite3_stmt *)stmt;
+
+- (NSString *)statusImageName;
 @end
