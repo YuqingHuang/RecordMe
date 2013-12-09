@@ -10,6 +10,8 @@
 #import "YQEventDBConnector.h"
 #import "YQEvent.h"
 #import "YQStatusImageView.h"
+#import "YQCurrentTaskExecute.h"
+#import "YQTask.h"
 
 @implementation YQListViewController {
     NSArray *_array;
@@ -20,7 +22,6 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {        
         _array = [YQEventDBConnector eventsList];
-//  @[@"1st line", @"2nd line", @"3rd line"];
     }
     return self;
 }
@@ -28,6 +29,27 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.navigationBarHidden = NO;
+}
+
+#pragma alert view delegate methods
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    switch (buttonIndex) {
+        case 0: {
+            //cancle button pressed.
+            break;
+        }
+        case 1: {
+            [self continueButtonOfAlertViewClicked];
+            break;
+        }
+        default:break;
+    }
+}
+
+- (void)continueButtonOfAlertViewClicked {
+    YQEvent *currentEvent = [self _selectedEvent];
+    YQTask *task = [[YQTask alloc] initWithEvent:currentEvent];
+    [[YQCurrentTaskExecute currentTaskExecute] execute:task];
 }
 
 #pragma table view data source methods
@@ -59,10 +81,14 @@
 
     NSLog(@"I'm swiping cell");
     
-    //start to finish this task
-    
-    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Finish Task" message:@"Start to finish it?" delegate:self cancelButtonTitle:@"NO :(" otherButtonTitles:@"YEP!", nil];
+    [alert show];
 }
 
+#pragma private methods
 
+- (YQEvent *)_selectedEvent {
+    NSIndexPath *path = [self.eventList indexPathForSelectedRow];
+    return _array[(NSUInteger) path.row];
+}
 @end

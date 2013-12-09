@@ -10,7 +10,7 @@
 
 static NSString *const cellIdentifier = @"eventCell";
 
-@interface YQListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface YQListViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 @property(strong, nonatomic) IBOutlet UITableView *eventList;
 
 @end

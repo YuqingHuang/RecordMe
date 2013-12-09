@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */; };
+		3686713E2C9F1637F5E4EBA1 /* YQTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 368679347EEBEDB7580A9F3C /* YQTask.m */; };
+		368679455A88710B31CE56E9 /* YQCurrentTaskExecute.m in Sources */ = {isa = PBXBuildFile; fileRef = 368679B29C2CC0A2AA61A831 /* YQCurrentTaskExecute.m */; };
 		36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D64CB8BC43FC1A4CF84 /* YQEvent.m */; };
 		36867C81EB81577E4114375A /* YQStatusImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368674A4A0E4F759AAC10154 /* YQStatusImageView.m */; };
 		36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A5B0388F1C64CF98982 /* avatar.png */; };
@@ -64,10 +66,14 @@
 
 /* Begin PBXFileReference section */
 		368674A4A0E4F759AAC10154 /* YQStatusImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQStatusImageView.m; sourceTree = "<group>"; };
+		368679347EEBEDB7580A9F3C /* YQTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQTask.m; path = RecordMe/Model/YQTask.m; sourceTree = SOURCE_ROOT; };
+		3686797AC32429304B05A493 /* YQCurrentTaskExecute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQCurrentTaskExecute.h; sourceTree = "<group>"; };
+		368679B29C2CC0A2AA61A831 /* YQCurrentTaskExecute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQCurrentTaskExecute.m; sourceTree = "<group>"; };
 		36867A5B0388F1C64CF98982 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		36867BC873380284B22FF632 /* YQEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEvent.h; sourceTree = "<group>"; };
 		36867D64CB8BC43FC1A4CF84 /* YQEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEvent.m; sourceTree = "<group>"; };
 		36867E7F129D6FC1C5D90E0F /* YQStatusImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQStatusImageView.h; sourceTree = "<group>"; };
+		36867EDCD509EC6CA4D52D57 /* YQTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQTask.h; path = RecordMe/Model/YQTask.h; sourceTree = SOURCE_ROOT; };
 		4415807318438B9D00D8ECE3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		4415807418438B9D00D8ECE3 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		4415807518438B9D00D8ECE3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 			children = (
 				36867D64CB8BC43FC1A4CF84 /* YQEvent.m */,
 				36867BC873380284B22FF632 /* YQEvent.h */,
+				368679B29C2CC0A2AA61A831 /* YQCurrentTaskExecute.m */,
+				3686797AC32429304B05A493 /* YQCurrentTaskExecute.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -278,6 +286,8 @@
 				49E3A135184F21A3006E99E7 /* YQAddEventViewController.h */,
 				49E3A136184F21A3006E99E7 /* YQAddEventViewController.m */,
 				49E3A137184F21A3006E99E7 /* YQAddEventViewController.xib */,
+				368679347EEBEDB7580A9F3C /* YQTask.m */,
+				36867EDCD509EC6CA4D52D57 /* YQTask.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -475,6 +485,8 @@
 				36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */,
 				49E3A13D184F21DA006E99E7 /* YQMainViewController.m in Sources */,
 				36867C81EB81577E4114375A /* YQStatusImageView.m in Sources */,
+				368679455A88710B31CE56E9 /* YQCurrentTaskExecute.m in Sources */,
+				3686713E2C9F1637F5E4EBA1 /* YQTask.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
