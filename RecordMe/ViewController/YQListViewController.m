@@ -9,6 +9,7 @@
 #import "YQListViewController.h"
 #import "YQEventDBConnector.h"
 #import "YQEvent.h"
+#import "YQStatusImageView.h"
 
 @implementation YQListViewController {
     NSArray *_array;
@@ -49,7 +50,7 @@
     
     YQEvent *cellEvent = _array[(NSUInteger) indexPath.row];
     cell.textLabel.text = cellEvent.content;
-    cell.accessoryView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:cellEvent.statusImageName]];
+    cell.accessoryView = [[YQStatusImageView alloc] initWithImage:[UIImage imageNamed:cellEvent.statusImageName]];
 
     return cell;
 }

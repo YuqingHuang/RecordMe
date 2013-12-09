@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3249893CE1544D888E9D84CF /* libPods-RecordMe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CA57E2F1414156B4A6086B /* libPods-RecordMe.a */; };
 		36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 36867D64CB8BC43FC1A4CF84 /* YQEvent.m */; };
+		36867C81EB81577E4114375A /* YQStatusImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 368674A4A0E4F759AAC10154 /* YQStatusImageView.m */; };
 		36867CF8A4B04EF134F8DC0F /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 36867A5B0388F1C64CF98982 /* avatar.png */; };
 		4415807718438B9D00D8ECE3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807318438B9D00D8ECE3 /* add.png */; };
 		4415807818438B9D00D8ECE3 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 4415807418438B9D00D8ECE3 /* calendar.png */; };
@@ -62,9 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		368674A4A0E4F759AAC10154 /* YQStatusImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQStatusImageView.m; sourceTree = "<group>"; };
 		36867A5B0388F1C64CF98982 /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
 		36867BC873380284B22FF632 /* YQEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQEvent.h; sourceTree = "<group>"; };
 		36867D64CB8BC43FC1A4CF84 /* YQEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YQEvent.m; sourceTree = "<group>"; };
+		36867E7F129D6FC1C5D90E0F /* YQStatusImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YQStatusImageView.h; sourceTree = "<group>"; };
 		4415807318438B9D00D8ECE3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
 		4415807418438B9D00D8ECE3 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
 		4415807518438B9D00D8ECE3 /* heart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heart.png; sourceTree = "<group>"; };
@@ -153,6 +156,15 @@
 				36867A5B0388F1C64CF98982 /* avatar.png */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		368672D0A93C5CA58BF76D2C /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				368674A4A0E4F759AAC10154 /* YQStatusImageView.m */,
+				36867E7F129D6FC1C5D90E0F /* YQStatusImageView.h */,
+			);
+			path = ViewComponent;
 			sourceTree = "<group>";
 		};
 		36867679533CE26C31A2096D /* Model */ = {
@@ -249,6 +261,7 @@
 			children = (
 				494936F21842F5DB001CC484 /* YQCircularImageView.h */,
 				494936F31842F5DB001CC484 /* YQCircularImageView.m */,
+				368672D0A93C5CA58BF76D2C /* ViewComponent */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -461,6 +474,7 @@
 				494936F41842F5DB001CC484 /* YQCircularImageView.m in Sources */,
 				36867B9D3B9EECB6DF5F3205 /* YQEvent.m in Sources */,
 				49E3A13D184F21DA006E99E7 /* YQMainViewController.m in Sources */,
+				36867C81EB81577E4114375A /* YQStatusImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
