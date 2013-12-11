@@ -11,4 +11,9 @@
 
 @interface YQMainViewController : UIViewController<RNGridMenuDelegate>
 
+@property (strong, nonatomic) IBOutlet UILabel *countDown;
+@property (strong, nonatomic) IBOutlet UIButton *stopButton;
+
+- (IBAction)stopTask:(id)sender;
+
 @end

@@ -15,4 +15,6 @@
 + (BOOL)saveEventToDB:(YQEvent *)event;
 
 + (NSArray *)eventsList;
+
++ (BOOL)updateEvent:(NSString *)id1 withActualDuration:(NSString *)actualDuration;
 @end

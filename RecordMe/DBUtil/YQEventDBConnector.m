@@ -19,4 +19,8 @@
 + (NSArray *)eventsList {
     return [[DBManager getSharedInstance] allDataFromTable:KEY_EVENT_TABLE];
 }
+
++ (BOOL)updateEvent:(NSString *)id withActualDuration:(NSString *)actualDuration {
+    return [[DBManager getSharedInstance] updateEvent:id withActualDuration:actualDuration];
+}
 @end

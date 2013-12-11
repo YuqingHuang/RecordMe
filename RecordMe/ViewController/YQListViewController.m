@@ -33,16 +33,8 @@
 
 #pragma alert view delegate methods
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
-    switch (buttonIndex) {
-        case 0: {
-            //cancle button pressed.
-            break;
-        }
-        case 1: {
-            [self continueButtonOfAlertViewClicked];
-            break;
-        }
-        default:break;
+    if (buttonIndex == 1) {
+        [self continueButtonOfAlertViewClicked];
     }
 }
 
@@ -50,6 +42,8 @@
     YQEvent *currentEvent = [self _selectedEvent];
     YQTask *task = [[YQTask alloc] initWithEvent:currentEvent];
     [[YQCurrentTaskExecute currentTaskExecute] execute:task];
+    
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 #pragma table view data source methods

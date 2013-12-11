@@ -83,4 +83,20 @@ static sqlite3_stmt *statement = nil;
     return dataArray;
 }
 
+
+- (BOOL)updateEvent:(NSString *)eventID withActualDuration:(NSString *)actualDuration {
+    const char *dbpath = [databasePath UTF8String];
+
+    if (sqlite3_open(dbpath, &database) == SQLITE_OK) {
+        NSString *updateSQL = [NSString stringWithFormat:@"UPDATE %@ SET %@=\"%@\" where id=\"%@\" ", KEY_EVENT_TABLE, KEY_DURATION_ACTUAL, actualDuration, eventID];
+        NSLog(@"update SQL is %@", updateSQL);
+        const char *update_stmt = [updateSQL UTF8String];
+
+        sqlite3_prepare_v2(database, update_stmt, -1, &statement, NULL);
+
+        int executeResult = sqlite3_step(statement);
+        return executeResult == SQLITE_DONE;
+    }
+    return NO;
+}
 @end

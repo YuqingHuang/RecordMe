@@ -23,4 +23,6 @@ static NSString *const KEY_EVENT_TABLE = @"events";
 - (BOOL)createEventWithContent:(NSString *)content date:(NSString *)date estimatedDuration:(NSString *)duration actualDuration:(NSString *)acDuration status:(NSString *)status;
 
 - (NSArray *)allDataFromTable:(NSString * const)table;
+
+- (BOOL)updateEvent:(NSString *)eventID withActualDuration:(NSString *)actualDuration;
 @end

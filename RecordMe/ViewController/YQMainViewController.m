@@ -10,11 +10,8 @@
 #import "YQCircularImageView.h"
 #import "YQListViewController.h"
 #import "YQAddEventViewController.h"
+#import "YQCurrentTaskExecute.h"
 #import <RNGridMenu.h>
-
-@interface YQMainViewController ()
-
-@end
 
 @implementation YQMainViewController
 
@@ -36,9 +33,22 @@
     [avatar addGestureRecognizer:singleFingerTap];
     
     [self.view addSubview:avatar];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tick:) name:TIME_GOES_BY_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startTask:) name:START_TASK_NOTIFICATION object:nil];
 }
 
-#pragma 
+#pragma notification methods
+- (void)tick:(NSNotification *)notification {
+    NSString *timeLeft = [notification object];
+    self.countDown.text = timeLeft;
+}
+
+- (void)startTask:(id)startTask {
+    [self.stopButton setTitle:@"STOP" forState:UIControlStateNormal];
+}
+
+#pragma UI interaction methods
 - (void)showGrid {
     NSInteger numberOfOptions = 4;
     NSArray *items = @[[[RNGridMenuItem alloc] initWithImage:[UIImage imageNamed:@"arrow"] title:@"List" action:^{[self displayList];}],
@@ -60,5 +70,9 @@
 - (void)addEvent {
     YQAddEventViewController *addEventVC = [[YQAddEventViewController alloc] initWithNibName:@"YQAddEventViewController" bundle:nil];
     [self.navigationController pushViewController:addEventVC animated:YES];
+}
+
+- (IBAction)stopTask:(id)sender {
+    [[YQCurrentTaskExecute currentTaskExecute] stopTimer];
 }
 @end
