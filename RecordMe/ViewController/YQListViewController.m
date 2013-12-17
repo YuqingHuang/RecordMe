@@ -15,6 +15,7 @@
 
 @implementation YQListViewController {
     NSArray *_array;
+    NSIndexPath *_swipedIndexPath;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -39,8 +40,8 @@
 }
 
 - (void)continueButtonOfAlertViewClicked {
-    YQEvent *currentEvent = [self _selectedEvent];
-    YQTask *task = [[YQTask alloc] initWithEvent:currentEvent];
+    YQEvent *event = [self _swipedEvent];
+    YQTask *task = [[YQTask alloc] initWithEvent:event];
     [[YQCurrentTaskExecute currentTaskExecute] execute:task];
     
     [self.navigationController popViewControllerAnimated:YES];
@@ -71,18 +72,22 @@
     return cell;
 }
 
-- (void)swipeCell:(id)sender {
+- (void)swipeCell:(UISwipeGestureRecognizer *)sender {
 
     NSLog(@"I'm swiping cell");
+    [self setSwipedIndexPathAfterSwiping:sender];
     
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Finish Task" message:@"Start to finish it?" delegate:self cancelButtonTitle:@"NO :(" otherButtonTitles:@"YEP!", nil];
     [alert show];
 }
 
 #pragma private methods
+- (void)setSwipedIndexPathAfterSwiping:(UISwipeGestureRecognizer *)swipeGesture {
+    CGPoint location = [swipeGesture locationInView:_eventList];
+    _swipedIndexPath = [_eventList indexPathForRowAtPoint:location];
+}
 
-- (YQEvent *)_selectedEvent {
-    NSIndexPath *path = [self.eventList indexPathForSelectedRow];
-    return _array[(NSUInteger) path.row];
+- (YQEvent *)_swipedEvent {
+    return _array[(NSUInteger) _swipedIndexPath.row];
 }
 @end
