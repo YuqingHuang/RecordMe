@@ -38,6 +38,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startTask:) name:START_TASK_NOTIFICATION object:nil];
 }
 
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 #pragma notification methods
 - (void)tick:(NSNotification *)notification {
     NSString *timeLeft = [notification object];
