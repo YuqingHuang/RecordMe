@@ -45,6 +45,8 @@
 }
 
 - (void)startTask:(id)startTask {
+    NSString *currentEventContent = [startTask object];
+    self.currentEvent.text = currentEventContent;
     [self.stopButton setTitle:@"FINISH" forState:UIControlStateNormal];
 }
 

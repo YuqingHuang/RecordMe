@@ -13,6 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *countDown;
 @property (strong, nonatomic) IBOutlet UIButton *stopButton;
+@property (strong, nonatomic) IBOutlet UILabel *currentEvent;
 
 - (IBAction)stopTask:(id)sender;
 

@@ -34,7 +34,7 @@
     _timeLeftFlag = YES;
 
     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:YES];
-    [[NSNotificationCenter defaultCenter] postNotificationName:START_TASK_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] postNotificationName:START_TASK_NOTIFICATION object:task.content];
 }
 
 - (void)tick {
