@@ -9,9 +9,9 @@
 
 //several status types here
 static NSString *const STATUS_NEW = @"NEW";
+static NSString *const STATUS_DONE = @"DONE";
 
 static NSString *const NEW_STATUS_IMAGE = @"new";
-
 static NSString *const FINISHED_STATUS_IMAGE = @"finished";
 
 @interface YQEvent : NSObject

@@ -16,5 +16,5 @@
 
 + (NSArray *)eventsList;
 
-+ (BOOL)updateEvent:(NSString *)id1 withActualDuration:(NSString *)actualDuration;
++ (BOOL)finishEvent:(NSString *)id withActualDuration:(NSString *)actualDuration;
 @end

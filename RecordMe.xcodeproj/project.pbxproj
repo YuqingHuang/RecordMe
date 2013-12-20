@@ -376,7 +376,7 @@
 				ORGANIZATIONNAME = YQ;
 				TargetAttributes = {
 					446151B9184228A5000D4745 = {
-						TestTargetID = 4461519E184228A5000D4745 /* RecordMe */;
+						TestTargetID = 4461519E184228A5000D4745;
 					};
 				};
 			};

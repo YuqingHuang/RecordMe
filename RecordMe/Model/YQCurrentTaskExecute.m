@@ -57,7 +57,7 @@
     }
     
     NSString *actualDuration = [self timeStringFromSecond:secondSpent withPrefix:@""];
-    BOOL updateResult = [YQEventDBConnector updateEvent:_task.eventID withActualDuration:actualDuration];
+    BOOL updateResult = [YQEventDBConnector finishEvent:_task.eventID withActualDuration:actualDuration];
 }
 
 - (NSString *)countDownString {

@@ -45,7 +45,7 @@
 }
 
 - (void)startTask:(id)startTask {
-    [self.stopButton setTitle:@"STOP" forState:UIControlStateNormal];
+    [self.stopButton setTitle:@"FINISH" forState:UIControlStateNormal];
 }
 
 #pragma UI interaction methods
