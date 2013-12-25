@@ -58,6 +58,8 @@
     
     NSString *actualDuration = [self timeStringFromSecond:secondSpent withPrefix:@""];
     BOOL updateResult = [YQEventDBConnector finishEvent:_task.eventID withActualDuration:actualDuration];
+    NSNumber *resultObject = [[NSNumber alloc] initWithBool:updateResult];
+    [[NSNotificationCenter defaultCenter] postNotificationName:STOP_TASK_NOTIFICATION object:resultObject];
 }
 
 - (NSString *)countDownString {

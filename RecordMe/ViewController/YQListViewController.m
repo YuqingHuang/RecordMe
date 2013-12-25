@@ -73,7 +73,6 @@
 }
 
 - (void)swipeCell:(UISwipeGestureRecognizer *)sender {
-
     NSLog(@"I'm swiping cell");
     [self setSwipedIndexPathAfterSwiping:sender];
     

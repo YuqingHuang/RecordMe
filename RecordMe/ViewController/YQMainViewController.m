@@ -36,11 +36,11 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(tick:) name:TIME_GOES_BY_NOTIFICATION object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(startTask:) name:START_TASK_NOTIFICATION object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(uiUpdateAfterStopTask:) name:STOP_TASK_NOTIFICATION object:nil];
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
-//    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 #pragma notification methods
@@ -53,6 +53,15 @@
     NSString *currentEventContent = [startTask object];
     self.currentEvent.text = currentEventContent;
     [self.stopButton setTitle:@"FINISH" forState:UIControlStateNormal];
+}
+
+- (void)uiUpdateAfterStopTask:(NSNotification *)notification {
+    BOOL stopTaskResult = [[notification object] boolValue];
+    if (stopTaskResult) {
+        [self _cleanUI];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WOW" message:@"Congrats! You've finish a task!" delegate:self cancelButtonTitle:@"Oh Yeah!" otherButtonTitles:nil];
+        [alert show];
+    }
 }
 
 #pragma UI interaction methods
@@ -81,5 +90,11 @@
 
 - (IBAction)stopTask:(id)sender {
     [[YQCurrentTaskExecute currentTaskExecute] stopTimer];
+}
+
+- (void)_cleanUI {
+    self.countDown.text = nil;
+    self.currentEvent.text = nil;
+    [self.stopButton setTitle:nil forState:UIControlStateNormal];
 }
 @end

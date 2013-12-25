@@ -10,6 +10,7 @@
 
 static NSString *const TIME_GOES_BY_NOTIFICATION = @"TimeGoesBy";
 static NSString *const START_TASK_NOTIFICATION = @"StartTask";
+static NSString *const STOP_TASK_NOTIFICATION = @"StopTask";
 
 @interface YQCurrentTaskExecute : NSObject
 
