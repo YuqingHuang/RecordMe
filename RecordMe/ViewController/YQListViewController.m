@@ -50,7 +50,6 @@
 #pragma table view data source methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"[YQ] number of events from DB is: %d", _array.count);
     return _array.count;
 }
 
